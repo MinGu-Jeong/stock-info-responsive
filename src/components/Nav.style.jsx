@@ -65,6 +65,10 @@ export const NavMenuCurrent = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 20px;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 export const NavMenu = styled.div`
   width: 100px;
@@ -84,6 +88,10 @@ export const NavMenu = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
   }
 `;
 export const NavAlarmDateContainer = styled.div`

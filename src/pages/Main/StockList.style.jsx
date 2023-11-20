@@ -17,6 +17,12 @@ export const StockListContainer = styled.div`
   border: none;
   border-radius: 10px;
   background-color: #fff;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 `;
 
 export const StockSortContainer = styled.div`
@@ -26,6 +32,16 @@ export const StockSortContainer = styled.div`
   margin-top: 30px;
   margin-left: 50px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const StockSortItemSelect = styled.div`
@@ -45,6 +61,18 @@ export const StockSortItemSelect = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+  }
 `;
 
 export const StockSortItemDeselct = styled.div`
@@ -64,16 +92,32 @@ export const StockSortItemDeselct = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+  }
 `;
 
 export const StockItemWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1250px;
+  width: 90%;
   height: 70px;
   border-bottom: 1px solid #000;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    height: 50px;
+  }
 `;
 export const StockItemContainer = styled.div`
   display: flex;
@@ -81,7 +125,7 @@ export const StockItemContainer = styled.div`
   align-items: center;
 `;
 export const StockItem = styled.div`
-  width: 250px;
+  width: 300px;
   padding-left: 50px;
   display: flex;
   flex-direction: row;
@@ -93,6 +137,18 @@ export const StockItem = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    padding-left: 30px;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 130px;
+    padding-left: 10px;
+    font-size: 10px;
+  }
 `;
 
 export const StockItemPercentRise = styled.div`
@@ -110,6 +166,18 @@ export const StockItemPercentRise = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+  }
 `;
 
 export const StockItemPercentFall = styled.div`
@@ -127,6 +195,18 @@ export const StockItemPercentFall = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 50px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+  }
 `;
 export const StockItemShowMore = styled.button`
   margin-top: 30px;
@@ -146,4 +226,16 @@ export const StockItemShowMore = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+  }
 `;
