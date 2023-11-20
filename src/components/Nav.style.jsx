@@ -37,8 +37,8 @@ export const NavTitle = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 35px;
     img {
       width: 100%;
       height: 100%;
