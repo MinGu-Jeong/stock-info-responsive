@@ -1,6 +1,6 @@
-import { styled } from "styled-components";
-import MainIndex from "./MainIndex";
-import { Outlet } from "react-router-dom";
+import { styled } from 'styled-components';
+import MainIndex from './MainIndex';
+import { Outlet } from 'react-router-dom';
 
 const MainContainer = styled.div`
   display: flex;
@@ -12,6 +12,10 @@ const MainContent = styled.div`
   height: auto;
   background: #f2f5f7;
   box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+  }
 `;
 export default function Main() {
   return (

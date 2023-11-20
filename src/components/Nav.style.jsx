@@ -35,6 +35,16 @@ export const NavTitle = styled.div`
       object-fit: cover;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    width: 80px;
+    height: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 `;
 export const NavMenuCurrent = styled.div`
   width: 100px;
