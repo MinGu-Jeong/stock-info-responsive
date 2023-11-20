@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
   display: flex;
@@ -9,12 +9,32 @@ export const Nav = styled.nav`
   height: 100px;
   background-color: #fff;
   gap: 50px;
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
 `;
 export const NavTitle = styled.div`
   width: 200px;
   height: 100px;
   background-color: #fff;
   cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 `;
 export const NavMenuCurrent = styled.div`
   width: 100px;
@@ -31,6 +51,10 @@ export const NavMenuCurrent = styled.div`
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 export const NavMenu = styled.div`
   width: 100px;
@@ -47,18 +71,34 @@ export const NavMenu = styled.div`
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 export const NavAlarmDateContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const NavAlarm = styled.div`
   margin-left: 100px;
-  width: 250px;
+  width: 100px;
   height: 80px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const NavDate = styled.div`
   font-size: 15px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
