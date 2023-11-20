@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 export const IndexContainer = styled.div`
   display: flex;
@@ -6,6 +6,22 @@ export const IndexContainer = styled.div`
   justify-content: center;
   margin-top: 100px;
   gap: 50px;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 80px;
+  }
 `;
 
 export const IndexItemWrapper = styled.div`
@@ -19,6 +35,19 @@ export const IndexItemWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 130px;
+    height: 60px;
+    margin: 0 auto;
+    gap: 5px;
+  }
 `;
 
 export const IndexItemTitle = styled.span`
@@ -29,6 +58,14 @@ export const IndexItemTitle = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 
 export const IndexItemPointRise = styled.span`
@@ -39,6 +76,14 @@ export const IndexItemPointRise = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 
 export const IndexItemPointFall = styled.span`
@@ -49,6 +94,14 @@ export const IndexItemPointFall = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 
 export const IndexItemPercentRise = styled.span`
@@ -59,6 +112,14 @@ export const IndexItemPercentRise = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
 `;
 export const IndexItemPercentFall = styled.span`
   color: #377beb;
@@ -68,4 +129,12 @@ export const IndexItemPercentFall = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
 `;
