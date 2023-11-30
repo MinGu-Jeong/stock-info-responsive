@@ -73,7 +73,7 @@ export const NewsWrapper = styled.div`
       font-size: 15px;
     }
     p {
-      font-size: 10px;
+      display: none;
     }
   }
 `;
