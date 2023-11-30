@@ -198,7 +198,7 @@ export const StockItemPercentFall = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 50px;
-    height: 30px;
+    height: 20px;
     font-size: 10px;
   }
 

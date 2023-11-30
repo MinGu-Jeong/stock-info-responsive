@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FlexColumn = styled.div`
   display: flex;
@@ -15,6 +15,11 @@ export const ContentMargin = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
 `;
 export const StockDetailContainer = styled.div`
   width: 1050px;
@@ -25,6 +30,11 @@ export const StockDetailContainer = styled.div`
   background-color: #fff;
   border-radius: 10px;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    margin-top: 80px;
+  }
 `;
 export const StockDetailLeftWrapper = styled.div`
   width: 50%;
@@ -66,6 +76,10 @@ export const StockName = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 export const StockPrice = styled.div`
   color: #000;
@@ -75,15 +89,23 @@ export const StockPrice = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 export const StockPercentChange = styled.div`
-  color: ${(props) => (props.isRising ? "#da4841" : "#377BEB")};
+  color: ${(props) => (props.isRising ? '#da4841' : '#377BEB')};
   text-align: center;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 export const StockInfo = styled.div`
   color: #000;
@@ -94,6 +116,10 @@ export const StockInfo = styled.div`
   font-weight: 400;
   line-height: normal;
   width: 100px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 export const StockInfoValue = styled.div`
   color: #000;
@@ -103,6 +129,10 @@ export const StockInfoValue = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 export const StockChartContainer = styled.div`
   display: flex;
@@ -115,6 +145,19 @@ export const StockChartContainer = styled.div`
   padding-bottom: 20px;
   background-color: #fff;
   border-radius: 10px;
+
+  @media screen and (min-width: 769px) {
+    width: 1050px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    margin-top: 80px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 export const LoadingBackground = styled.div`
   background-color: #f2f5f7;

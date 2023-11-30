@@ -1,5 +1,5 @@
-import axios from "axios";
-import * as S from "./StockPage.style";
+import axios from 'axios';
+import * as S from './StockPage.style';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,9 +9,9 @@ import {
   Title,
   Tooltip,
   Legend,
-} from "chart.js";
-import { useEffect, useState } from "react";
-import { Line } from "react-chartjs-2";
+} from 'chart.js';
+import { useEffect, useState } from 'react';
+import { Line } from 'react-chartjs-2';
 
 ChartJS.register(
   CategoryScale,
@@ -39,7 +39,7 @@ export default function StockChart({ stockData }) {
   const options = {
     responsive: true,
     interaction: {
-      mode: "index",
+      mode: 'index',
       intersect: false,
     },
     plugins: {
@@ -60,8 +60,8 @@ export default function StockChart({ stockData }) {
     datasets: [
       {
         data: stocksData.map((item) => item.clpr).reverse(),
-        borderColor: "#9EC2EC",
-        backgroundColor: "#FFF",
+        borderColor: '#9EC2EC',
+        backgroundColor: '#FFF',
       },
     ],
   };

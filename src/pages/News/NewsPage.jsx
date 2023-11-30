@@ -1,19 +1,17 @@
-import Nav from "../../components/Nav";
-import styled from "styled-components";
-import * as S from "./News.style";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import * as S from './News.style';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function NewsPage() {
   const [page, setPage] = useState(1);
   const [newsData, setNewsData] = useState([]);
   useEffect(() => {
     axios
-      .get("/api/v1/search/news", {
-        params: { query: "증시", start: page },
+      .get('/api/v1/search/news', {
+        params: { query: '증시', start: page },
         headers: {
-          "X-Naver-Client-Id": import.meta.env.VITE_REACT_APP_NAVER_CLIENT_ID,
-          "X-Naver-Client-Secret": import.meta.env
+          'X-Naver-Client-Id': import.meta.env.VITE_REACT_APP_NAVER_CLIENT_ID,
+          'X-Naver-Client-Secret': import.meta.env
             .VITE_REACT_APP_NAVER_CLIENT_SECRET,
         },
       })
@@ -40,7 +38,8 @@ export default function NewsPage() {
                   key={news.link}
                   href={news.link}
                   target="_blank"
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                  rel="noreferrer"
                 >
                   <S.NewsWrapper>
                     <h2 dangerouslySetInnerHTML={{ __html: news.title }} />

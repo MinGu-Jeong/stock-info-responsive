@@ -1,6 +1,6 @@
-import * as S from "./MainIndex.style";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import * as S from './MainIndex.style';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 export default function MainIndex() {
   const [exchangeRateUSD, setExchangeRateUSD] = useState(0);
@@ -15,7 +15,7 @@ export default function MainIndex() {
   useEffect(() => {
     axios
       .get(
-        "https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRWUSD"
+        'https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRWUSD'
       )
       .then((res) => {
         let changeRate = parseFloat(
@@ -28,7 +28,7 @@ export default function MainIndex() {
   useEffect(() => {
     axios
       .get(
-        "https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRWJPY"
+        'https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRWJPY'
       )
       .then((res) => {
         let changeRate = parseFloat(

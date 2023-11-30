@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FlexColumn = styled.div`
   display: flex;
@@ -13,6 +13,12 @@ export const ContentMargin = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    margin-top: 30px;
+  }
 `;
 
 export const NewsContainer = styled.div`
@@ -25,15 +31,51 @@ export const NewsContainer = styled.div`
   border-radius: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    padding-left: 30px;
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+    padding-left: 30px;
+    h1 {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const NewsWrapper = styled.div`
   border-bottom: 1px solid #000;
-  width: 950px;
+  width: 90%;
   height: auto;
   margin-top: 10px;
   margin-bottom: 20px;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 90%;
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
 `;
 
 export const PageWrapper = styled.div`
@@ -44,6 +86,13 @@ export const PageWrapper = styled.div`
   margin-bottom: 50px;
   margin-left: -50px;
   gap: 50px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -30px;
+    gap: 30px;
+  }
 `;
 export const NextPage = styled.div`
   width: 0;
@@ -55,6 +104,13 @@ export const NextPage = styled.div`
   border-top-left-radius: 3px;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #303438;
+    border-right: 15px solid transparent;
+  }
 `;
 export const PrevPage = styled.div`
   width: 0;
@@ -66,6 +122,13 @@ export const PrevPage = styled.div`
   border-top-right-radius: 3px;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #303438;
+    border-left: 15px solid transparent;
+  }
 `;
 export const PrevPageDisabled = styled.div`
   width: 0;
@@ -77,10 +140,21 @@ export const PrevPageDisabled = styled.div`
   border-top-right-radius: 3px;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #929294;
+    border-left: 15px solid transparent;
+  }
 `;
 export const PageNumber = styled.div`
   width: 15px;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;

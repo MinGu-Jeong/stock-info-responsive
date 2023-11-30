@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
-import * as S from "./StockPage.style";
-import { useLocation } from "react-router-dom";
-import axios from "axios";
-import StockDetail from "./StockDetail";
-import StockNews from "./StockNews";
-import StockChart from "./StockChart";
-import Loading from "../../styles/Loading";
+import { useEffect, useState } from 'react';
+import * as S from './StockPage.style';
+import { useLocation } from 'react-router-dom';
+import axios from 'axios';
+import StockDetail from './StockDetail';
+import StockNews from './StockNews';
+import StockChart from './StockChart';
+import Loading from '../../styles/Loading';
 export default function StockPage() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const stockId = params.get("id");
+  const stockId = params.get('id');
   const [stockData, setStockData] = useState(null);
   useEffect(() => {
     window.scrollTo(0, 0);
