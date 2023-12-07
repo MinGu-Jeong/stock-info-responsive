@@ -1,6 +1,7 @@
 import { styled } from 'styled-components';
 import MainIndex from './MainIndex';
 import { Outlet } from 'react-router-dom';
+import Footer from './Footer';
 
 const MainContainer = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ export default function Main() {
           <Outlet />
         </MainContent>
       </MainContainer>
+      <Footer />
     </div>
   );
 }

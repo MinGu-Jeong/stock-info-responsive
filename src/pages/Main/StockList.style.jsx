@@ -39,8 +39,8 @@ export const StockSortContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    margin-left: 10px;
-    margin-bottom: 10px;
+    justify-content: center;
+    gap: 40px;
   }
 `;
 
@@ -72,6 +72,7 @@ export const StockSortItemSelect = styled.div`
     width: 60px;
     height: 30px;
     font-size: 10px;
+    border-radius: 10px;
   }
 `;
 
@@ -103,6 +104,7 @@ export const StockSortItemDeselct = styled.div`
     width: 60px;
     height: 30px;
     font-size: 10px;
+    border-radius: 10px;
   }
 `;
 

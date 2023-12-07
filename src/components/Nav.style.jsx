@@ -13,6 +13,10 @@ export const Nav = styled.nav`
   @media screen and (max-width: 768px) {
     gap: 10px;
   }
+
+  @media screen and (max-width: 480px) {
+    gap: 0px;
+  }
 `;
 export const NavTitle = styled.div`
   width: 200px;

@@ -13,13 +13,16 @@ export const IndexContainer = styled.div`
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     margin-top: 80px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 
   @media screen and (max-width: 480px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
     margin-top: 80px;
   }
 `;
@@ -43,10 +46,13 @@ export const IndexItemWrapper = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    width: 130px;
+    width: 90%;
     height: 60px;
-    margin: 0 auto;
-    gap: 5px;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 
@@ -64,7 +70,7 @@ export const IndexItemTitle = styled.span`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 15px;
+    font-size: 20px;
   }
 `;
 
@@ -82,7 +88,7 @@ export const IndexItemPointRise = styled.span`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 15px;
+    font-size: 20px;
   }
 `;
 
@@ -100,7 +106,7 @@ export const IndexItemPointFall = styled.span`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 15px;
+    font-size: 20px;
   }
 `;
 
@@ -118,7 +124,7 @@ export const IndexItemPercentRise = styled.span`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 10px;
+    font-size: 15px;
   }
 `;
 export const IndexItemPercentFall = styled.span`
@@ -135,6 +141,6 @@ export const IndexItemPercentFall = styled.span`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 10px;
+    font-size: 15px;
   }
 `;
