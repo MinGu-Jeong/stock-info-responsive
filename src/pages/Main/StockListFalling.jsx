@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import * as S from "./StockList.style";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import * as S from './StockList.style';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export default function StockListFalling() {
   const navigate = useNavigate();
@@ -35,11 +35,11 @@ export default function StockListFalling() {
       <S.ContainerCenter>
         <S.StockListContainer>
           <S.StockSortContainer>
-            <S.StockSortItemDeselct onClick={() => navigate("/")}>
+            <S.StockSortItemDeselct onClick={() => navigate('/')}>
               시가총액
             </S.StockSortItemDeselct>
             <S.StockSortItemDeselct
-              onClick={() => navigate("/stock-sortby-rising")}
+              onClick={() => navigate('/stock-sortby-rising')}
             >
               급상승
             </S.StockSortItemDeselct>
@@ -51,7 +51,6 @@ export default function StockListFalling() {
               <S.StockItem>현재가</S.StockItem>
               <S.StockItem>등락률</S.StockItem>
               <S.StockItem>시가총액(억)</S.StockItem>
-              <S.StockItem>MY 종목추가</S.StockItem>
             </S.StockItemWrapper>
             {stockData.map((stockItem, index) => (
               <S.StockItemWrapper
@@ -74,7 +73,6 @@ export default function StockListFalling() {
                 <S.StockItem>
                   {(parseInt(stockItem?.mrktTotAmt) / 100000000).toFixed(0)}
                 </S.StockItem>
-                <S.StockItem>추가</S.StockItem>
               </S.StockItemWrapper>
             ))}
 
